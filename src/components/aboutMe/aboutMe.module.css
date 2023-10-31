@@ -1,0 +1,32 @@
+.sectionAboutMe {
+  padding-top: 100px;
+}
+
+.img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+/* iconos de redes  */
+
+.iconSocial {
+  display:flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li .socialMedia {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 15px 18px;
+  margin: 3px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+ul li .socialMedia:hover{
+  background-color: white;
+  transition: .8s;
+}
+ul li .socialMedia:hover i {
+  color:rgba(80, 4, 222, 0.972);
+}
