@@ -1,0 +1,26 @@
+.customNavbar {
+  background-color: rgba(0, 0, 0, 0.051);
+  backdrop-filter: blur(15px);
+ }
+
+ .customLink {
+   color: white;
+   border-radius: 15px;
+ }
+ 
+ @media (min-width:1020px) {
+ 
+  .customLink {
+    padding: 8px;
+    padding-right: 18px;
+    padding-left: 18px;
+    margin-left: 15px;
+  }
+  
+  .customLink:hover {
+    background-color: white;
+    color: black;
+    transition: .6s;
+  }
+  
+}
