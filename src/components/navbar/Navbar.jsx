@@ -18,12 +18,12 @@ const Navbar = () => {
               </li>
 
               <li className="nav-item">
-                <a href="#" className={`${customLink} `}>Proyectos</a>
+                <a href="#projects" className={`${customLink} text-decoration-none `}>Proyectos</a>
               </li>
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a href="#" className={`${customLink} text-decoration-none `}>Skills</a>
-              </li>
+              </li> */}
 
             </ul>
           </div>

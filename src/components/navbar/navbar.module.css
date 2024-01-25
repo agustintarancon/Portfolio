@@ -1,6 +1,7 @@
 .customNavbar {
   background-color: rgba(0, 0, 0, 0.051);
   backdrop-filter: blur(15px);
+  box-shadow: 1px 1px 1000px rgba(38, 0, 255, 0.379);
  }
 
  .customLink {
@@ -18,8 +19,8 @@
   }
   
   .customLink:hover {
-    background-color: white;
-    color: black;
+    background-color: rgb(0, 119, 255);
+    color: rgb(255, 255, 255);
     transition: .6s;
   }
   

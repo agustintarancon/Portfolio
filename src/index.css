@@ -3,10 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-
 body {
-  background: linear-gradient(to bottom, rgb(17, 16, 17), rgb(70, 3, 75));
+  background: linear-gradient(to bottom, rgb(5, 5, 5), rgb(5, 5, 5));
   background-size: cover;
   background-attachment: fixed; /* Opcional, para fijar el fondo */
 }

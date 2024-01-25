@@ -1,10 +1,12 @@
 .sectionAboutMe {
-  padding-top: 100px;
+  padding-top: 210px;
+  padding-bottom: 190px;
 }
-
 .img {
   width: 300px;
   border-radius: 50%;
+  box-shadow: 1px 1px 1000px rgba(38, 0, 255, 0.379);
+  border: 3px solid rgba(4, 2, 40, 0.952);
 }
 
 /* iconos de redes  */
@@ -22,11 +24,16 @@ ul li .socialMedia {
   margin: 3px;
   border-radius: 50%;
   font-size: 20px;
+  text-decoration: none;
 }
 ul li .socialMedia:hover{
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   transition: .8s;
 }
 ul li .socialMedia:hover i {
-  color:rgba(80, 4, 222, 0.972);
+  color:rgb(0, 119, 255);
+}
+
+.font {
+  font-size: 18px;
 }
