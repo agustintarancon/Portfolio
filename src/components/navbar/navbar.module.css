@@ -1,27 +1,24 @@
 .customNavbar {
   background-color: rgba(0, 0, 0, 0.051);
   backdrop-filter: blur(15px);
-  box-shadow: 1px 1px 1000px rgba(38, 0, 255, 0.379);
  }
 
  .customLink {
-   color: white;
-   border-radius: 15px;
+   border-bottom: 3px solid transparent;
+   color: rgb(240, 240, 240);
  }
  
  @media (min-width:1020px) {
  
   .customLink {
     padding: 8px;
-    padding-right: 18px;
-    padding-left: 18px;
-    margin-left: 15px;
+    margin-right: 14px;
+    margin-left: 14px;
   }
   
   .customLink:hover {
-    background-color: rgb(0, 119, 255);
-    color: rgb(255, 255, 255);
     transition: .6s;
+   border-bottom: 3px solid rgb(206, 23, 66);
   }
   
 }

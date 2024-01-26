@@ -1,5 +1,5 @@
 import React from 'react'
-import {sectionAboutMe, img, iconSocial ,socialMedia, font, } from '../aboutMe/aboutMe.module.css'
+import {sectionAboutMe, img, iconSocial ,socialMedia, font, title1 } from '../aboutMe/aboutMe.module.css'
 import { Link } from 'react-router-dom'
 import imgMe from '../../assets/me.png' 
 
@@ -13,7 +13,7 @@ const AboutMe = () => {
     
       <div className="col-12 col-xl-7 d-flex flex-column justify-content-center ">
 
-        <h1 className=" display-6">HOLA! SOY AGUSTIN TARANCON.</h1>
+        <h1 className={title1}>HOLA! SOY AGUSTIN TARANCON.</h1>
         <p className={font}>Como desarrollador Full-Stack me apasiona crear paginas web eficientes
           y atractivas, me considero alguien detallista por lo que priorizo buenas
           practicas y un código limpio. Durante mi formación participe en

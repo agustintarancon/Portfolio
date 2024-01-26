@@ -3,7 +3,6 @@
   justify-content: center;
   background-color: rgb(10, 10, 10);
   border-radius: 20px;
-  box-shadow: 1px 1px 1000px rgba(38, 0, 255, 0.237);
 }
 
 .title {
@@ -62,19 +61,23 @@
 }
 
 ul li .socialMedia {
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid rgba(206, 23, 66, 0.623);
   padding: 10px 12px;
   margin: 3px;
   border-radius: 50%;
   font-size: 1rem;
   text-decoration: none;
 }
+ul li .socialMedia i {
+  color: rgb(138, 138, 138);
+}
 ul li .socialMedia:hover{
-  background-color: white;
-  transition: .8s;
+  transition: .5s;
+  border: 2px solid rgb(206, 23, 66);
+  box-shadow: 1px 1px 10px rgb(206, 23, 66);
 }
 ul li .socialMedia:hover i {
-  color:rgba(0, 0, 0, 0.972);
+  color:rgb(255, 255, 255);
 }
 
 
