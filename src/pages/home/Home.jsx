@@ -1,6 +1,6 @@
 import React from 'react'
-import AboutMe from '../../src/components/aboutMe/AboutMe'
-import Projects from '../../src/components/projects/Projects'
+import AboutMe from "../../components/specific/aboutMe/AboutMe"
+import Projects from "../../components/specific/projects/Projects"
 
 const Home = () => {
   return (

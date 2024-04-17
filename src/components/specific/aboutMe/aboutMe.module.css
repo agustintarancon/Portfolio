@@ -1,0 +1,59 @@
+.sectionAboutMe {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.img {
+  width: 300px;
+  border-radius: 50%;
+}
+.title1 {
+    background: linear-gradient(90deg, rgba(121,9,105,1) 0%, rgba(231,20,38,1) 82%, rgba(255,0,0,0.9327380610447304) 100%);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent;
+    text-align: center;
+}
+.font {
+  font-size: 17px;
+  text-align: center;
+}
+
+/* iconos de redes  */
+.iconSocial {
+  display:flex;
+  list-style: none;
+  justify-content: center;
+  margin-top: 40px;
+}
+.socialMedia {
+  font-size: 32px;
+  transition: 0.4s;
+  margin: 0px 20px;
+}
+.socialMedia:hover {
+  transform: scale(1.2);;
+  color: rgb(234, 48, 95);
+}
+
+
+@media (min-width: 1000px) {
+  .sectionAboutMe {
+    padding-top: 210px;
+    padding-bottom: 190px;
+  }
+  .title1 {
+    text-align: left;
+  }
+  .font {
+    text-align: left;
+  }
+  .iconSocial {
+    justify-content: left;
+    margin-top: 15px;
+  }
+  .socialMedia {
+    margin: 0;
+    margin-right: 30px;
+    font-size: 22px;
+  }
+}
