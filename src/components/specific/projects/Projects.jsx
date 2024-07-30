@@ -7,15 +7,10 @@ import sliceHaven from "../../../assets/sliceHaven.png"
 
 const Projects = () => {
   return (
-
     <>
       <section className={`container p-0 ${customContainer}` } id="projects">
         <div className={`row justify-content-center mx-lg-5 p-3` } >
-  
           <h5 className={`${title} text-center pb-5`}>Proyectos</h5>  
-
-
-          
           <div className='col-10 col-md-5 col-lg-4 col-xl-4 pb-4 mb-3'>
               <div className={`card ${customCard}`}>
               <Link to={"https://slicehaven-project.netlify.app/"} target='_blank' className='text-decoration-none'>
@@ -37,8 +32,6 @@ const Projects = () => {
                 </div>
               </div>
           </div>
-     
-  
 
           <div className='col-10 col-md-5 col-lg-4 col-xl-4 pb-4 mb-3'>
               <div className={`card ${customCard}`}>
@@ -46,11 +39,11 @@ const Projects = () => {
                   <img src={moviesCode} className={`card-img-top ${img}`}alt='moviesCode'></img>
                 </Link>
                 <div className={content}>
-                  <h6 className="pb-2 pt-2">Proyecto 2:</h6>
+                  <h6 className="pb-2 pt-2">MoviesCode</h6>
                   <p> 
                     Pagina de películas con inicio de sesión y tabla de administración
                   </p>
-                  <p>Html, css, bootstrap y javascript</p>
+                  <p>Stack: Html5, css3, bootstrap 5 y javascript</p>
                   <ul className={iconSocial}> 
                     <li>
                     <Link to={"https://github.com/agustintarancon/Proyecto-RollingMovies.git"} target="_blank" className={socialMedia}><i className="bi bi-github"></i></Link>
@@ -58,7 +51,6 @@ const Projects = () => {
                   </ul>
                 </div>
               </div>
-    
           </div>
 
           <div className='col-10 col-md-5 col-lg-4 col-xl-4 pb-4 mb-3'>
@@ -68,7 +60,7 @@ const Projects = () => {
                 </Link>
                 <div className={content}>
                   <h6 className="pb-2 pt-2">CodeClothes</h6>
-                  <p>Stack: Html5, css3, bootstrap.</p>
+                  <p>Stack: Html5, css3, bootstrap 5.</p>
                   <ul className={iconSocial}> 
                     <li>
                     <Link to={"https://github.com/agustintarancon/Proyecto-CodeClothes.git"} target="_blank" className={socialMedia}><i className="bi bi-github"></i></Link>
@@ -76,15 +68,10 @@ const Projects = () => {
                   </ul>
                 </div>
               </div>
-       
           </div>
-
-
-
         </div>
       </section>
     </>
-
   )
 }
 

@@ -35,10 +35,9 @@
   color: rgb(234, 48, 95);
 }
 
-
 @media (min-width: 1000px) {
   .sectionAboutMe {
-    padding-top: 210px;
+    padding-top: 190px;
     padding-bottom: 190px;
   }
   .title1 {
