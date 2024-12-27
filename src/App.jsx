@@ -8,12 +8,12 @@ import Error404 from "./pages/error/Error404"
 function App() {
   return (
     <BrowserRouter>
-      <Navbar/>
+      <Navbar />
       <Routes>
-      <Route path="/" Component={Home}/>
-      <Route path="*" Component={Error404}/>
+        <Route path="/" Component={Home} />
+        <Route path="*" Component={Error404} />
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   )
 }

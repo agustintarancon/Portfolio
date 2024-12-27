@@ -1,24 +1,28 @@
 .customNavbar {
-  background-color: rgba(0, 0, 0, 0.051);
-  backdrop-filter: blur(15px);
- }
+  background-color: #111111;
+}
 
- .customLink {
-   border-bottom: 3px solid transparent;
-   color: rgb(240, 240, 240);
- }
- 
- @media (min-width:1020px) {
- 
+.customLink {
+  color: rgb(240, 240, 240);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.logoClass {
+  width: 35px;
+}
+
+@media (min-width:1020px) {
+
   .customLink {
     padding: 8px;
     margin-right: 14px;
     margin-left: 14px;
   }
-  
+
   .customLink:hover {
     transition: .6s;
-   border-bottom: 3px solid rgb(206, 23, 66);
+    color: #D13838;
   }
-  
+
 }

@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   color: rgb(235, 235, 235);
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: sans-serif
 }
 body {
   background: linear-gradient(to bottom, rgb(18, 18, 18), rgb(18, 18, 18));
