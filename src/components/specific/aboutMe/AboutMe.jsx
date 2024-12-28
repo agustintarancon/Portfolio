@@ -1,35 +1,31 @@
 import React from 'react'
-import {sectionAboutMe, img, iconSocial ,socialMedia, font, title1 } from '../aboutMe/aboutMe.module.css'
+import {sectionAboutMe, img, iconSocial ,socialMedia, font, title1, title2 } from '../aboutMe/aboutMe.module.css'
 import { Link } from 'react-router-dom'
 import imgMe from '../../../assets/me.png' 
 
 const AboutMe = () => {
   return (
     <section className={`container-fluid ${sectionAboutMe}`} id="aboutMe">
-      <div className="row d-flex justify-content-center flex-row-reverse">
-        <div className={`col-12 col-xl-3 d-flex justify-content-center mb-4`}>
+      <div className="row d-flex justify-content-center ">
+        <div className={`col-10 col-md-5 col-xl-4 d-flex justify-content-center mb-4 `}>
           <img src={imgMe} alt="Agustín Tarancón" className={`${img}`}></img>
         </div>
       
-        <div className="col-12 col-xl-7 d-flex flex-column justify-content-center">
+        <div className="col-11 col-md-6 col-xl-5 d-flex flex-column justify-content-center  px-0">
 
-          <h1 className={title1}>HOLA! SOY AGUSTIN TARANCON.</h1>
+          <h5 className={title1}>HOLA! SOY AGUSTIN.</h5>
+          <h2 className={title2}>DESARROLLADOR FULL STACK</h2>
           <p className={font}>Como desarrollador Full-Stack me apasiona crear paginas web eficientes
             y atractivas, me considero alguien detallista por lo que priorizo buenas
-            practicas y un código limpio. Durante mi formación participe en
-            proyectos que me permitieron ampliar mis habilidades tanto del lado del
-            cliente como del servidor, además aprendí a trabajar en equipo con
-            metodologías agiles. Estoy en constante crecimiento en el mundo de la programación por lo que
-            siempre estoy dispuesto a seguir aprendiendo.
+            practicas y un código limpio. 
           </p>
-
        
           <div className={iconSocial}>  
-            <Link to={"https://www.linkedin.com/in/agust%C3%ADn-taranc%C3%B3n-494b91283/"} target="_blank">
+            <Link to={"https://www.linkedin.com/in/agust%C3%ADn-taranc%C3%B3n-494b91283/"} target="_blank" className='me-4'>
               <p className={`bi bi-linkedin ${socialMedia}`}></p>
             </Link>
            
-            <Link to={"https://github.com/agustintarancon"} target="_blank">
+            <Link to={"https://github.com/agustintarancon"} target="_blank" className='me-4'>
               <p className={`bi bi-github ${socialMedia}`}></p>
             </Link>
            
