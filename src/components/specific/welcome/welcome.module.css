@@ -1,0 +1,76 @@
+.customContainer {
+  height: 100vh;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: #F1F1F1;
+  font-weight: 400;
+  padding: 0px;
+  margin: 0px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  border: 1px solid white;
+  width: 270px;
+  padding-block: 10px;
+  margin-top: 30px;
+}
+
+/* iconos de redes  */
+.iconSocial {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  left: -210px;
+  bottom: 20px;
+  list-style: none;
+  margin-top: 10px;
+  width: 390px;
+
+}
+
+.socialMedia {
+  font-size: 27px;
+  transition: 0.4s;
+}
+
+.socialMedia:hover {
+  color: rgb(134, 45, 216);
+}
+
+@media (min-width: 760px) {
+  .title {
+    font-size: 57px;
+  }
+  
+  .infoContainer {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .infoContainer {
+    width: 600px;
+  }
+
+  .title {
+    font-size: 70px;
+  }
+
+  .socialMedia {
+    font-size: 22px;
+  }
+}

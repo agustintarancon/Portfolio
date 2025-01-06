@@ -20,6 +20,10 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
+              <a href="#aboutMe" className={`${customLink} text-decoration-none `} aria-current="page">SOBRE MI</a>
+            </li>
+
+            <li className="nav-item">
               <a href="#projects" className={`${customLink} text-decoration-none `}>PROYECTOS</a>
             </li>
 
