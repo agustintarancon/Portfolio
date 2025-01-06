@@ -1,27 +1,48 @@
 .containerCustom {
-  width: 97%;
-  background-color:#1f1f1f;
-  padding: 30px;
-  border-radius: 10px;
+  background-color: #161616;
+}
 
-  margin-top: 80px;
+.rowCustom {
+  padding-block: 90px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
 .title {
-  font-size: 18px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .text {
   font-size: 15px;
 }
 
+.imgClass {
+  width: 300px;
+  border-radius: 500px;
+  margin-bottom: 60px;
+}
 
 @media (min-width: 1000px) {
-  .containerCustom {
-    width: 750px;
-    padding: 40px;
 
-    margin-top: 200px;
+  .rowCustom {
+    padding-block: 170px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 35px;
+    padding-bottom: 20px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .imgClass {
+    width: 300px;
   }
 
 }

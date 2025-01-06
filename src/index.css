@@ -6,7 +6,7 @@
   font-family: "Raleway", serif;
 }
 body {
-  background: linear-gradient(to bottom, rgb(18, 18, 18), rgb(18, 18, 18));
+  background: #070705;
   background-size: cover;
   background-attachment: fixed; /* Opcional, para fijar el fondo */
 }

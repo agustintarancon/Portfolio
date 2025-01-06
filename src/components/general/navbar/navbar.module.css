@@ -1,5 +1,5 @@
 .customNavbar {
-  background-color: #111111;
+  background-color: #070705;
 }
 
 .customLink {
@@ -21,8 +21,7 @@
   }
 
   .customLink:hover {
-    transition: .6s;
-    color: #D13838;
+    border-bottom: 1px solid white;
   }
 
 }
