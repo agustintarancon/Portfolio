@@ -19,8 +19,8 @@
 }
 
 .imgClass {
+  border-radius: 50%;
   width: 300px;
-  border-radius: 500px;
   margin-bottom: 60px;
 }
 
@@ -42,7 +42,7 @@
   }
 
   .imgClass {
-    width: 300px;
+    width: 350px;
   }
 
 }

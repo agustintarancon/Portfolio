@@ -1,19 +1,17 @@
 import React from 'react'
-import { customContainer, iconSocial, socialMedia, title, infoContainer, subtitle } from './welcome.module.css'
+import { customContainer, iconSocial, socialMedia, title, infoContainer, subtitle, imgClass } from './welcome.module.css'
 import { Link } from 'react-router-dom'
+import fondo from "../../../assets/fondo.jpg"
 
 const Welcome = () => {
   return (
     <section className={`container ${customContainer}`} id="home">
 
       <div className={`d-flex flex-column align-items-center`}>
-
         <div className={infoContainer}>
           <h2 className={title}>BIENVENIDOS <span className='fw-bold'>SOY AGUSTIN</span></h2>
           <p className={subtitle}>DESARROLLADOR FULL STACK</p>
         </div>
-
-
       </div>
 
       <div className={iconSocial}>
@@ -29,6 +27,8 @@ const Welcome = () => {
           <p className={`${socialMedia} fw-bold`}>CV</p>
         </Link>
       </div>
+
+      <img src={fondo} className={imgClass} alt="Imagen de fondo" />
 
     </section>
   )
