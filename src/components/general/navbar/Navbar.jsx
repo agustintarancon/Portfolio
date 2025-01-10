@@ -1,8 +1,12 @@
 import React from 'react'
 import { customLink, customNavbar, logoClass } from "./navbar.module.css"
 import logo from "../../../assets/Logo.png"
+import { useLocation } from 'react-router-dom'
 
 const Navbar = () => {
+  const location = useLocation()
+  const path = location.pathname
+
   return (
     <>
       <nav className={`navbar navbar-expand-lg p-3 px-5 position-fixed w-100 ${customNavbar}`}>
@@ -19,13 +23,17 @@ const Navbar = () => {
               <a href="/" className={`${customLink} text-decoration-none `} aria-current="page">INICIO</a>
             </li>
 
-            <li className="nav-item">
-              <a href="#aboutMe" className={`${customLink} text-decoration-none `} aria-current="page">SOBRE MI</a>
-            </li>
+            {path === "/" && (
+              <>
+                <li className="nav-item">
+                  <a href="#aboutMe" className={`${customLink} text-decoration-none `} aria-current="page">SOBRE MI</a>
+                </li>
 
-            <li className="nav-item">
-              <a href="#projects" className={`${customLink} text-decoration-none `}>PROYECTOS</a>
-            </li>
+                <li className="nav-item">
+                  <a href="#projects" className={`${customLink} text-decoration-none `}>PROYECTOS</a>
+                </li>
+              </>
+            )}
 
           </ul>
         </div>

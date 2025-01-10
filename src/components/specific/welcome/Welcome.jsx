@@ -23,7 +23,7 @@ const Welcome = () => {
           <p className={`bi bi-github ${socialMedia}`}></p>
         </Link>
 
-        <Link to={"https://drive.google.com/file/d/1nR9aIY2yB-F5zvBTrSuNjehsSG5WOjgx/view?usp=sharing"} target="_blank" className='text-decoration-none'>
+        <Link to={"https://drive.google.com/file/d/1GwpMzOXnmuvf8O05PkM2Bwk1mYLjutgL/view?usp=sharing"} target="_blank" className='text-decoration-none'>
           <p className={`${socialMedia} fw-bold`}>CV</p>
         </Link>
       </div>
