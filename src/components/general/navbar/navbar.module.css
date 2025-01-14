@@ -1,15 +1,20 @@
 .customNavbar {
   background-color: #070705;
+  z-index: 10;
 }
 
 .customLink {
   color: rgb(240, 240, 240);
-  font-size: 14px;
+  font-size: 15x;
   font-weight: 400;
 }
 
 .logoClass {
   width: 35px;
+}
+
+.customToggler {
+  width: 27px;
 }
 
 @media (min-width:1020px) {

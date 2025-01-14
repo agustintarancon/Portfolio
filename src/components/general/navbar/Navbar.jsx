@@ -1,7 +1,8 @@
 import React from 'react'
-import { customLink, customNavbar, logoClass } from "./navbar.module.css"
+import { customLink, customNavbar, logoClass, customToggler } from "./navbar.module.css"
 import logo from "../../../assets/Logo.png"
 import { useLocation } from 'react-router-dom'
+import button from "../../../assets/buttonBurger.png"
 
 const Navbar = () => {
   const location = useLocation()
@@ -14,7 +15,7 @@ const Navbar = () => {
           <img src={logo} alt="logo" className={logoClass} />
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+          <img src={button} alt="Boton hamburguesa" className={customToggler}/>
         </button>
         <div className="collapse navbar-collapse" id="navbar">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">

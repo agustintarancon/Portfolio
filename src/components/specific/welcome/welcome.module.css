@@ -40,16 +40,12 @@
   list-style: none;
   margin-top: 10px;
   width: 390px;
-
+  z-index: 0;
 }
 
 .socialMedia {
   font-size: 27px;
   transition: 0.4s;
-}
-
-.socialMedia:hover {
-  color: rgb(134, 45, 216);
 }
 
 .imgClass {
@@ -64,7 +60,7 @@
   .title {
     font-size: 57px;
   }
-  
+
   .infoContainer {
     width: 400px;
   }

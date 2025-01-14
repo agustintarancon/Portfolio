@@ -1,20 +1,18 @@
 .customContainer {
-  margin-top: 40px;
-  padding-top: 60px;
-} 
+  padding-top: 100px;
+}
 
 .title {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
-
 
 @media (min-width: 1000px) {
   .customContainer {
     margin-top: 100px;
     padding-top: 100px;
-  } 
+  }
 
   .img {
     height: 250px;

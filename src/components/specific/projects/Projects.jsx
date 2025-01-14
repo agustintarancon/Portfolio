@@ -7,8 +7,8 @@ const Projects = () => {
   return (
     <>
       <section className={`container ${customContainer}`} id="projects">
-        <div className={`row mx-lg-5 p-5`} >
-          <h5 className={`${title} pb-2`}>PROYECTOS</h5>
+        <div className={`row`} >
+          <h5 className={`${title} pb-5`}>PROYECTOS</h5>
 
           {projects.map((data) => {
             return (
