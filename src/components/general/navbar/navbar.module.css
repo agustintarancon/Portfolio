@@ -1,12 +1,30 @@
 .customNavbar {
   background-color: #070705;
   z-index: 10;
+  padding: 33px;
 }
 
 .customLink {
   color: rgb(240, 240, 240);
-  font-size: 15x;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative; 
+  text-decoration: none;
+}
+
+.customLink::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(240, 240, 240);
+  transition: width 0.3s ease-in-out;
+}
+
+.customLink:hover::after {
+  width: 100%;
 }
 
 .logoClass {
@@ -23,10 +41,6 @@
     padding: 8px;
     margin-right: 14px;
     margin-left: 14px;
-  }
-
-  .customLink:hover {
-    border-bottom: 1px solid white;
   }
 
 }
