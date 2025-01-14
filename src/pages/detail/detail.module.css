@@ -49,6 +49,42 @@
   background-color: #e96d6d;
 }
 
+/* boton custom */
+.button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(38, 38, 38);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  position: absolute;
+  left: 30px;
+  top: 110px;
+}
+
+.svgIcon {
+  width: 15px;
+  transition-duration: 0.3s;
+  transform: rotate(-90deg);
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  transform: scale(1.15);
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(27, 27, 27);
+  align-items: center;
+}
+
 
 @media (min-width:1000px) {
 
@@ -90,5 +126,8 @@
     font-size: 14px;
   }
   
+  .button {
+    left: 150px;
+  }
 
 }
