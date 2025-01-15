@@ -21,14 +21,7 @@
   text-align: center;
 }
 
-.subtitle {
-  font-size: 15px;
-  text-align: center;
-  border: 1px solid white;
-  width: 260px;
-  padding-block: 10px;
-  margin-top: 30px;
-}
+
 
 /* iconos de redes  */
 .iconSocial {
@@ -79,20 +72,45 @@
     font-size: 60px;
   }
 
-  .subtitle {
-    font-size: 15px;
-    text-align: center;
-    border: 1px solid white;
-    width: 260px;
-    padding-block: 10px;
-    margin-top: 30px;
-  }
-  
   .iconSocial {
     left: -215px;
   }
-  
+
   .socialMedia {
     font-size: 22px;
   }
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #f1f1f1;
+  width: 260px;
+  padding-block: 10px;
+  margin-top: 30px;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.subtitle:hover {
+  color: black
+}
+
+.subtitle::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: #f1f1f1;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.subtitle:hover::before {
+  width: 160%;
 }

@@ -1,19 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { projects } from '../../data/projects';
-import { img, containerCustom, divImg, desc1, desc2, title, linkWeb, descDiv, svgIcon, button } from "./detail.module.css"
+import { containerCustom, divImg, desc1, desc2, title, btn, descDiv, svgIcon, button } from "./detail.module.css"
+import ImageCarousel from '../../components/specific/carrusel/Carrusel';
 
 const Detail = () => {
   const { id } = useParams()
   const project = projects.find((p) => p.id === parseInt(id));
   const navigate = useNavigate();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]); 
+
   if (!project) {
     return <div>Proyecto no encontrado</div>;
   }
 
   return (
-    <div className={`container ${containerCustom}`}>
+    <div className={`container-fluid ${containerCustom}`}>
       <button className={button} onClick={() => navigate(-1)}>
         <svg className={svgIcon} viewBox="0 0 384 512">
           <path
@@ -23,18 +28,17 @@ const Detail = () => {
       </button>
 
       <div className={`row`}>
-        <div className={`col-12 col-md-12 col-lg-6 col-xl-6 ${divImg}`}>
-          <Link to={project.link} target='_blank' className='text-decoration-none'>
-            <img src={project.imgSource} className={img} alt={project.text1} />
-          </Link>
+
+        <div className={`col-12 col-md-12 col-lg-7 col-xl-7 ${divImg}`}>
+          <ImageCarousel images={project.images} />
         </div>
-        
-        <div className={`col-12 col-md-12 col-lg-6 col-xl-6 ${descDiv}`}>
+
+        <div className={`col-12 col-md-12 col-lg-5 col-xl-5 ${descDiv}`}>
           <h2 className={title}>{project.text1}</h2>
           <p className={desc1}>{project.desc}</p>
           <p className={desc2}>{project.techStack}</p>
           <Link to={project.link} target='_blank' className='text-decoration-none'>
-            <button className={linkWeb}>{project.text2}</button>
+            <button className={btn}>{project.text2}</button>
           </Link>
         </div>
       </div>

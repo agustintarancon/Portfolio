@@ -1,0 +1,21 @@
+.containerCustom {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.img {
+  width: 100%;
+  height: 240px;
+}
+
+:root {
+  --swiper-theme-color: rgb(0, 0, 0) !important;
+}
+
+
+@media (min-width:1000px) {
+  .img {
+    height: 430px;
+  }
+}

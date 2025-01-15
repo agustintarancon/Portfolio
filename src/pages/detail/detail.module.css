@@ -1,27 +1,21 @@
 .containerCustom {
-  padding-top: 90px;
+  padding-top: 200px;
   padding-bottom: 90px;
+  padding-inline: 0px;
 }
 
 .divImg {
-  background-color: #1f1f1f;
-  padding: 18px;
-  padding-block: 32px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
-.img {
-  width: 100%;
-  height: 200px;
-  box-shadow: 0px 13px 7px rgba(0, 0, 0, 0.4);
-}
-
+/* Descripcion */
 .descDiv {
-  padding-left: 20px;
+  padding-inline: 30px;
+  margin-bottom: 50px;
 }
 
 .title {
-  color: #DC3434;
+  color: #ffffff;
   font-weight: bold;
   font-size: 21px;
 }
@@ -37,19 +31,43 @@
   padding-bottom: 15px;
 }
 
-.linkWeb {
-  background-color: #DC3434;
-  color: white;
-  font-size: 13px;
-  padding: 10px;
-  border: none;
+/* btn web  */
+.btn {
+  color: #f1f1f1;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #f1f1f1;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
 }
 
-.linkWeb:hover {
-  background-color: #e96d6d;
+.btn:hover {
+  color: black
 }
 
-/* boton custom */
+.btn::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: #f1f1f1;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.btn:hover::before {
+  width: 160%;
+}
+
+/* btn back */
 .button {
   width: 60px;
   height: 60px;
@@ -87,19 +105,10 @@
 
 
 @media (min-width:1000px) {
-
   .containerCustom {
-    padding-top: 120px;
+    padding-inline: 70px;
   }
-
-  .divImg {
-    padding: 40px;
-  }
-
-  .img {
-    height: 300px;
-  }
-
+  
   .descDiv {
    display: flex;
    flex-direction: column;
@@ -127,7 +136,7 @@
   }
   
   .button {
-    left: 150px;
+    left: 70px;
   }
 
 }
