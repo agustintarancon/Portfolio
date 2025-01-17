@@ -11,7 +11,7 @@ const Detail = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [id]); 
+  }, [id]);
 
   if (!project) {
     return <div>Proyecto no encontrado</div>;

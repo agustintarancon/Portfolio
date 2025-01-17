@@ -1,5 +1,5 @@
 import React from 'react'
-import { img, customCard, titleClass } from "./card.module.css"
+import { img, customCard } from "./card.module.css"
 import { Link } from 'react-router-dom'
 
 

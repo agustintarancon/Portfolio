@@ -81,8 +81,8 @@
   cursor: pointer;
   transition-duration: 0.3s;
   position: absolute;
-  left: 30px;
-  top: 110px;
+  top: 15%;
+  left: 2%;
 }
 
 .svgIcon {
@@ -106,7 +106,8 @@
 
 @media (min-width:1000px) {
   .containerCustom {
-    padding-inline: 70px;
+    padding-top: 160px;
+    padding-inline: 60px;
   }
   
   .descDiv {
@@ -136,7 +137,8 @@
   }
   
   .button {
-    left: 70px;
+    top: 15%;
+    left: 4%;
   }
 
 }
