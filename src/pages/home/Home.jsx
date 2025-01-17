@@ -7,10 +7,9 @@ import 'aos/dist/aos.css';
 
 const Home = () => {
 
-  // Inicializar AOS con la opción `once` en true
   AOS.init({
-    duration: 1000, // Duración de la animación
-    once: true, // Ejecuta la animación solo una vez al bajar
+    duration: 1000,
+    once: true, 
   });
 
   return (

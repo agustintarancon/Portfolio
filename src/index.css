@@ -10,3 +10,7 @@ body {
   background-size: cover;
   background-attachment: fixed; /* Opcional, para fijar el fondo */
 }
+
+html, body {
+  overflow-x: hidden;
+}

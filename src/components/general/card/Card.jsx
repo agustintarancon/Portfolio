@@ -3,7 +3,7 @@ import { img, customCard } from "./card.module.css"
 import { Link } from 'react-router-dom'
 
 
-const Card = ({ imgSource, text1, id }) => {
+const Card = ({ imgSource, id }) => {
 
   return (
     <div className='col-12 col-md-5 col-lg-6 col-xl-6 mb-5'>
