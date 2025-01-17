@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <>
       <section className={`container ${customContainer}`} id="projects">
-        <div className={`row`} >
+        <div className={`row`} data-aos="fade-up" >
           <h5 className={`${title} pb-5`}>PROYECTOS</h5>
 
           {projects.map((data) => {

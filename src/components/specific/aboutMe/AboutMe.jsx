@@ -8,7 +8,7 @@ const AboutMe = () => {
 
       <div className={`row ${rowCustom}`}>
 
-        <div className="col-11 col-md-7 col-lg-5 me-lg-5">
+        <div className="col-11 col-md-7 col-lg-5 me-lg-5" data-aos="fade-right" >
           <h2 className={title}>SOBRE MI</h2>
           <p className={text}>Soy un desarrollador Full-Stack, con dos años de experiencia en el desarrollo de aplicaciones web y mobile. Mi especialización radica en crear soluciones eficientes, escalables y con un enfoque en la calidad del código tanto en el frontend como en el backend. </p>
           <p className={text}>
@@ -17,7 +17,7 @@ const AboutMe = () => {
           </p>
         </div>
 
-        <div className='col-11 col-md-7 col-lg-3 ms-lg-5 d-flex justify-content-lg-end justify-content-center pt-3 pt-lg-5'>
+        <div className='col-11 col-md-7 col-lg-3 ms-lg-5 d-flex justify-content-lg-end justify-content-center pt-3 pt-lg-5' data-aos="fade-left"  >
           <img src={fotoPerfil} className={imgClass} alt="Agustin Tarancon" />
         </div>
 

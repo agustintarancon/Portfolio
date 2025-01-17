@@ -5,7 +5,7 @@ import fondo from "../../../assets/fondo.jpg"
 
 const Welcome = () => {
   return (
-    <section className={`container ${customContainer}`} id="home">
+    <section className={`container ${customContainer}`} id="home" data-aos="fade-up">
 
       <div className={`d-flex flex-column align-items-center`}>
         <div className={infoContainer}>
